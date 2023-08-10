@@ -67,10 +67,10 @@ startInstall()
         mkdir docker -p && mkdir docker/uptimekuma -p && cd docker/uptimekuma && mkdir config
         sudo netstat -tulpn | grep LISTEN
 
-        echo -e "      *****      "
-        echo -e "      *****      "
+        echo -e ""
+        echo -e ""
         echo -e "${MAGENTA}      1.${NC}${GREEN} Please define each parameters:${NC}"
-        read -e -p "Please enter a Port for Uptime Kuma: " -i "33031" upkp
+        read -e -p "      Please enter a Port for Uptime Kuma: " -i "33031" upkp
         upkp=${upkp:-"33031"}
 
         echo "version: '3'
