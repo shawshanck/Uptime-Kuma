@@ -28,6 +28,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/shawshanck/SoftEther-VPN-Serve
 <hr>
 
 <p align="center">
-<img src="https://cdn-images.imagevenue.com/fe/a7/37/ME16QQCV_o.jpeg" width="100">
+<img src="https://cdn-images.imagevenue.com/fe/a7/37/ME16QQCV_o.jpeg" width="640">
 <br>
 </p>
