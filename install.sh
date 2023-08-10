@@ -58,6 +58,7 @@ startInstall()
         sudo pacman -S net-tools
         sudo zypper install net-tools
 
+        sleep 3s
         clear
 
         # Starting bash to create user defined parameters
