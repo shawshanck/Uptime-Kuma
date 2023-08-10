@@ -58,6 +58,8 @@ startInstall()
         sudo pacman -S net-tools
         sudo zypper install net-tools
 
+        clear
+
         # Starting bash to create user defined parameters
         echo -e "${MAGENTA}      1.${NC}${GREEN} Please define each parameters:${NC}"
 
