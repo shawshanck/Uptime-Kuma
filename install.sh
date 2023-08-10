@@ -49,7 +49,15 @@ startInstall()
         echo -e "*******************************************************"
         echo -e "***              Install Uptime Kuma                ***"
         echo -e "*******************************************************"
-    
+        echo -e "${MAGENTA}      *.${NC}${GREEN} Installing netstat:${NC}"
+
+        sudo apt install net-tools
+        sudo yum install net-tools
+        sudo emerge -a sys-apps/net-tools
+        sudo apk add net-tools
+        sudo pacman -S net-tools
+        sudo zypper install net-tools
+
         # Starting bash to create user defined parameters
         echo -e "${MAGENTA}      1.${NC}${GREEN} Please define each parameters:${NC}"
 
