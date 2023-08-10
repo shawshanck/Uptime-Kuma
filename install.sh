@@ -69,20 +69,20 @@ startInstall()
 
         echo "version: '3'
 
-        volumes:
-            uptimekuma-data:
-            driver: local
+volumes:
+ uptimekuma-data:
+   driver: local
 
-        services:
-            uptimekuma:
-                image: louislam/uptime-kuma:latest
-                container_name: uptimekuma
-                ports:
-                 - ${upkp:-"33031"}:3001
-            volumes:
-                 - /root/docker/uptimekuma/config:/app/data
-                 - /var/run/docker.sock:/var/run/docker.sock
-            restart: unless-stopped" > docker-compose.yml
+services:
+ uptimekuma:
+   image: louislam/uptime-kuma:latest
+   container_name: uptimekuma
+   ports:
+     - "3001:3001"      #if you are using the 3001 port you can change the left one as you wish
+   volumes:
+     - /root/docker/uptimekuma/config:/app/data
+     - /var/run/docker.sock:/var/run/docker.sock
+   restart: unless-stopped" > docker-compose.yml
 
 
 
