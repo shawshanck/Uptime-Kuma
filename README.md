@@ -23,7 +23,7 @@ apt install curl
 Then use the command below:
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/shawshanck/SoftEther-VPN-Server/main/install.sh --ipv4)
+bash <(curl -Ls https://raw.githubusercontent.com/shawshanck/Uptime-Kuma/main/install.sh --ipv4)
 ```
 <hr>
 
